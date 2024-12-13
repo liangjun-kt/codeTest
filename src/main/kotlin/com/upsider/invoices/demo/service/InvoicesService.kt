@@ -26,9 +26,9 @@ class InvoicesService(val authService: AuthService, val dbService: DBService) {
      * @param to end date
      * @return List<InvoicesDO>
      */
-    fun listUpInvoices(userID:String, from: LocalDate, to:LocalDate):List<InvoicesDO>{
+    fun listUpInvoices(userID:String, from: LocalDate, to:LocalDate, page:Int?):List<InvoicesDO>{
         if (userID.isNotBlank()){
-            return dbService.getInvoicesByDate(userID.toInt(), from, to)
+            return dbService.getInvoicesByDate(userID.toInt(), from, to, page)
         }else{
             throw Exception("Token Expired! Please use /api/auth/login to login first");
         }

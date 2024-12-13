@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.xiaoymin:knife4j-core:4.5.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.github.xiaoymin" artifactId="knife4j-core" version="4.5.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.xiaoymin/knife4j-core/4.5.0/f94ad844551942aa48b217bbe3deac13a9458374/knife4j-core-4.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

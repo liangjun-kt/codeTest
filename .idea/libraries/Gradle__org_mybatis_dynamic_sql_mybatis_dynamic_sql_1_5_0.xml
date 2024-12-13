@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.mybatis.dynamic-sql:mybatis-dynamic-sql:1.5.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.mybatis.dynamic-sql" artifactId="mybatis-dynamic-sql" version="1.5.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis.dynamic-sql/mybatis-dynamic-sql/1.5.0/46cbf8f7b251e4c05abd0bda109eaae53ec3a79e/mybatis-dynamic-sql-1.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

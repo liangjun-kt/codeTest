@@ -5,6 +5,7 @@ import com.upsider.invoices.demo.model.db.dataobject.UsersDO
 import com.upsider.invoices.demo.model.db.mapper.*
 import com.upsider.invoices.demo.model.request.AddInvoicesDTO
 import com.upsider.invoices.demo.model.request.CreateUserDTO
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.cache.annotation.Cacheable
 import org.springframework.stereotype.Service
 import java.security.MessageDigest
@@ -15,7 +16,8 @@ import java.util.*
 
 @Service
 class DBService(val usersDOMapper: UsersDOMapper, val invoicesDOMapper: InvoicesDOMapper) {
-
+    @Value("\${invoices.pageSize}")
+    val pageSize: Int = 10
     /**
      * Get user from db by email
      *
@@ -83,10 +85,14 @@ class DBService(val usersDOMapper: UsersDOMapper, val invoicesDOMapper: Invoices
      * @param end end date of invoice
      * @return List<InvoicesDO>
      */
-    fun getInvoicesByDate(userID:Int, start: LocalDate, end: LocalDate) : List<InvoicesDO> {
+    fun getInvoicesByDate(userID:Int, start: LocalDate, end: LocalDate, page:Int?) : List<InvoicesDO> {
+        val index =  page?:0
         val invoices : List<InvoicesDO> = invoicesDOMapper.select {
             where { InvoicesDODynamicSqlSupport.userId isEqualTo userID
                 and {InvoicesDODynamicSqlSupport.issueDate isBetween start and end} }
+            orderBy(InvoicesDODynamicSqlSupport.id)
+            limit(pageSize.toLong())
+            offset((index*pageSize).toLong())
         }
         return invoices;
     }

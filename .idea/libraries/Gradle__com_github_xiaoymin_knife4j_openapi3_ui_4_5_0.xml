@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.xiaoymin:knife4j-openapi3-ui:4.5.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.github.xiaoymin" artifactId="knife4j-openapi3-ui" version="4.5.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.xiaoymin/knife4j-openapi3-ui/4.5.0/c146b97f2fa1dba5ed88e7b8d2bfc3b7e6ff5a3f/knife4j-openapi3-ui-4.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

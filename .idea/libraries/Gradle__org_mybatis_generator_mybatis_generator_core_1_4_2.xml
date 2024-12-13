@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.mybatis.generator:mybatis-generator-core:1.4.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.mybatis.generator" artifactId="mybatis-generator-core" version="1.4.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis.generator/mybatis-generator-core/1.4.2/a85b1aa0f6a5cac368f014d8996afcfbff1feb54/mybatis-generator-core-1.4.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
